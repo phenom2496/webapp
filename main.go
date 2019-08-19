@@ -10,6 +10,7 @@ import (
 
 func main() {
 	r := mux.NewRouter()
+	fmt.Println("Hello")
 	r.HandleFunc("/", Hello)
 	http.Handle("/", r)
 	fmt.Println("Starting up on 8081")
